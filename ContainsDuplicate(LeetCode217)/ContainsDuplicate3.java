@@ -26,3 +26,4 @@ public class ContainsDuplicate3 {
     }
 
 }
+// Time complexity is O(1)
