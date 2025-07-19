@@ -27,9 +27,10 @@ public class Anagram {
 
     public static void main(String[] args) {
 
-    
         System.out.println(isAnagram("cat", "act"));
         System.out.println(isAnagram("null", "Luln"));
 
     }
 }
+
+// Time complexity is o(NLogN)
