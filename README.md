@@ -1,2 +1,2 @@
 # NeetcodeGrind150PracticeCode
-UnderStanding DSA more than me 
+Understanding DSA more than me 
