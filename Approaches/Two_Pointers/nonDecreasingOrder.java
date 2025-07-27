@@ -6,15 +6,17 @@ public class nonDecreasingOrder {
         int n = arr.length;
         int leftPointer = 0 ;
         int rightPointer  = n -1;
-        int ans[]={};
-        int count =  0 ;
+        int ans[]=new int[n];
+        int count =  n-1;
         while(leftPointer<rightPointer)
         {
-            if(Math.abs(arr[leftPointer])<Math.abs(arr[rightPointer])){
-                ans[count++]=arr[rightPointer];
+            if(Math.abs(arr[leftPointer])<=Math.abs(arr[rightPointer])){
+                ans[count--]=arr[rightPointer]*arr[rightPointer];
+                rightPointer--;
             }
             else{
-                ans[count++]=arr[leftPointer];
+                ans[count--]=arr[leftPointer]*arr[leftPointer];
+                leftPointer++;
             }
         }
 
